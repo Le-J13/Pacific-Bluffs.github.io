@@ -1,0 +1,121 @@
+/* Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #2a9d8f;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    font-size: 18px;
+}
+
+footer {
+    background-color: #2a9d8f;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.btn {
+    background-color: #e76f51;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Carrousel */
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Section Réservation */
+.reservation-form {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #2a9d8f;
+}
+
+/* Tarifs */
+.tarifs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.tarif-card {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tarif-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarif-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Contact */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+

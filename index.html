@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Pacific Bluffs</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #FFE4B5;
+            color: white;
+        }
+
+        header {
+            background-color: #4682B4;
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            font-size: 14px; /* Réduction de la taille de la police */
+            margin-left: 20px;
+            white-space: nowrap; /* Empêche le texte de se casser sur plusieurs lignes */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end; /* Positionne la liste de droite */
+            flex-wrap: wrap; /* Permet à la liste de se réorganiser sur plusieurs lignes si nécessaire */
+        }
+
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #FF8C00;
+        }
+
+        .title-box {
+            background-color: #4682B4;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .welcome-text {
+            text-align: center;
+            font-size: 24px;
+            color: #FF8C00;
+            margin: 20px 0;
+            padding: 40px;
+            background: linear-gradient(45deg, #FFD700, #4682B4);
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .catalogue-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #FFD700;
+            color: #4682B4;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .catalogue-btn:hover {
+            background-color: #FF8C00;
+        }
+
+        .image-slider {
+            width: 100%;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Left: Logo -->
+        <div>
+            <img src="https://forum.gta.world/en/uploads/monthly_2020_09/logo6.png.b8551196e443e6b75632f356813352d2.png" alt="Pacific Bluffs Logo">
+        </div>
+
+        <!-- Right: Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Title Box with Pacific Bluffs -->
+    <div class="title-box">
+        Pacific Bluffs
+    </div>
+
+    <!-- Welcome Text with Gradient Background -->
+    <div class="welcome-text">
+        <p>Bienvenue à Pacific Bluffs</p>
+        <p>Bienvenue sur notre site ! Découvrez notre endroit paradisiaque où vous pourrez profiter d'une expérience inoubliable sur la plage.</p>
+        <p>Explorez notre offre de plats délicieux, boissons rafraîchissantes, et bien plus encore !</p>
+        <a href="tarifs.html" class="catalogue-btn">Voir le Catalogue</a>
+    </div>
+
+    <!-- Image Slider below the Welcome Text -->
+    <div class="image-slider">
+        <div class="slider-container">
+            <img src="https://cdn.discordapp.com/attachments/1322284526575026218/1322297712627945673/image.png?ex=67725775&is=677105f5&hm=a0f3df24d7828b93770d77c1a93e986e4f1260eccd17fe3c50c48a8d1196b8b6&" alt="Pacific Bluffs Image 1" class="slider-image">
+            <img src="https://cdn.discordapp.com/attachments/1322284526575026218/1322297799282528299/image.png?ex=6772578a&is=6771060a&hm=cf4b192590f5725c8444ff9fb83fd5a25d5d9dd163715c16a9a19c37ef673165&" alt="Pacific Bluffs Image 2" class="slider-image">
+            <img src="pacific.jpg" alt="Pacific" class="slider-image">
+            <img src="https://cdn.discordapp.com/attachments/1322284526575026218/1322297832652279910/image.png?ex=67725792&is=67710612&hm=12c00318a946bb4f1edcda81dbb547b63a00884c2d6067133509f8074fddd436&" alt="Pacific Bluffs Image 3" class="slider-image">
+            <img src="pacific2.jpg" alt="Pacific" class="slider-image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pacific Bluffs. Tous droits réservés.</p>
+        <p><a href="index.html">Retour à l'Accueil</a> | <a href="contact.html">Contactez-nous</a></p>
+    </footer>
+
+    <script>
+        // Script to make the images slide
+        let slideIndex = 0;
+        const sliderContainer = document.querySelector('.slider-container');
+        const slides = document.querySelectorAll('.slider-image');
+
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            sliderContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
