@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Pacific Bluffs</title>
+    <title>Articles - Pacific Bluffs</title>
     <style>
         body {
             margin: 0;
@@ -16,17 +16,17 @@
 
         header {
             background-color: #4682B4;
-            padding: 20px 0; /* Plus de padding vertical pour un meilleur effet */
+            padding: 20px 0;
             color: white;
             display: flex;
-            align-items: center;  /* Centre verticalement */
-            justify-content: center;  /* Centre horizontalement */
+            align-items: center;
+            justify-content: center;
             width: 100%;
         }
 
         header img {
             height: 50px;
-            margin-right: 15px; /* Espacement entre le logo et le titre */
+            margin-right: 15px;
         }
 
         .header-title {
@@ -51,37 +51,42 @@
             color: #FFD700;
         }
 
-        /* Encadré pour le blog */
-        .blog-info-box {
-            background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec transparence */
-            color: white; /* Texte en blanc */
-            padding: 20px; /* Espacement interne */
-            border-radius: 10px; /* Coins arrondis */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Ombre autour de l'encadré */
-            text-align: center; /* Centrer le texte */
-            margin-top: 30px; /* Espacement au-dessus de l'encadré */
+        .articles {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .article {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #4682B4;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .article h3 {
+            color: #FFD700;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .article p {
             font-size: 18px;
+            margin-bottom: 10px;
         }
 
-        .blog-info-box h2 {
-            color: #FFD700; /* Titre en couleur dorée */
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .blog-info-box p {
-            font-size: 20px;
-            margin: 15px 0;
-        }
-
-        .blog-info-box a {
-            color: #FFD700; /* Liens en couleur dorée */
+        .article a {
+            color: #FFD700;
             font-weight: bold;
             text-decoration: none;
         }
 
-        .blog-info-box a:hover {
-            color: #FF8C00; /* Changer la couleur au survol */
+        .article a:hover {
+            color: #FF8C00;
         }
 
         footer {
@@ -108,19 +113,29 @@
 <body>
     <header>
         <img src="https://forum.gta.world/en/uploads/monthly_2020_09/logo6.png.b8551196e443e6b75632f356813352d2.png" alt="Pacific Bluffs Logo">
-        <h1 class="header-title">Pacific Bluffs</h1>
+        <h1 class="header-title">Pacific Bluffs - Articles</h1>
     </header>
 
-    <!-- Section Blog -->
-    <div class="content">
-        <div class="blog-info-box">
-            <h2>Bienvenue sur notre Blog</h2>
-            <p>Découvrez les dernières actualités, événements et bien plus encore sur le blog du Pacific Bluffs.</p>
-            <a href="#">Soon....  </a> <!-- Lien vers les articles du blog -->
+    <div class="articles">
+        <div class="article">
+            <h3>Article 1 : Le charme du Pacific Bluffs</h3>
+            <p>Explorez les lieux emblématiques du Pacific Bluffs et découvrez pourquoi cet endroit est si unique.</p>
+            <a href="#">Lire plus</a>
+        </div>
+
+        <div class="article">
+            <h3>Article 2 : Événements à venir</h3>
+            <p>Ne manquez pas les événements excitants prévus ce mois-ci au Pacific Bluffs.</p>
+            <a href="#">Lire plus</a>
+        </div>
+
+        <div class="article">
+            <h3>Article 3 : Histoire et traditions</h3>
+            <p>Plongez dans l'histoire fascinante et les traditions qui font le Pacific Bluffs.</p>
+            <a href="#">Lire plus</a>
         </div>
     </div>
-    Voir les Articles.
-    <!-- Footer -->
+
     <footer>
         <p>&copy; 2024 Pacific Bluffs. Tous droits réservés.</p>
         <p><a href="index.html">Retour à l'Accueil</a> | <a href="contact.html">Contactez-nous</a></p>
